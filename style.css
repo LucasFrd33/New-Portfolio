@@ -160,11 +160,9 @@ nav a{
     width: 50%;
   }
   .scroll{
-    grid-row: 4;
+    grid-row: 3;
     grid-column: 1;
     justify-content: end;
-  }
-  .scroll img{
-    padding-top: 200px;
+    align-items: center;
   }
 }
