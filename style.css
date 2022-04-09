@@ -78,6 +78,7 @@ body{
 .barres.active .hamburger::after {
     top: 0;
     transform: rotate(135deg);
+    z-index: 2000;
 }
 .menu {
   position: absolute;
@@ -87,7 +88,13 @@ body{
   left: -120%;
   z-index: 1000;
 }
-
+.menu img{
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+}
 ul {
   position: absolute;
   top: 40%;
@@ -101,8 +108,8 @@ ul li {
 a {
   text-decoration: none;
   color: rgb(31, 30, 30);
-  font-size: 60px;
-  font-family: Orbitron;
+  font-size: 24px;
+  font-family:'foundersgotesklight' ;
 }
 
 nav{
