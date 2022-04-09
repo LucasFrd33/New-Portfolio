@@ -5,21 +5,32 @@ function loader(){
     const TLLOAD = gsap.timeline();
 
     TLLOAD
-    .to('.images-container', {height: 400, duration: 1.3, delay: 0.4, ease: 'power2.out'})
-    .to('.bloc-txt', {height: 'auto', duration: 0.6, ease: 'power2.out'}, '-=0.8')
-    .to('.bloc-txt h2', {y: 0, ease: 'power2.out'}, '-=0.6')
-
-    .to('.f2', {y: 0, duration: 0.6, ease: 'power2.out'})
-    .add(() => {
-        document.querySelector('.flip-img1').style.backgroundImage = "url('ressources/image1.jpg')";
-    })
-    .to('.f2', {y: '-100%'})
-
-    .to('.load-container', {y: "-100%", ease : Power1.easeInOut})
-    .add(() => {
-        document.querySelector('.load-container').style.display = "none";
-    })
     .to("#textPres", 1, {x: +0, ease : Power1.easeInOut})
     .to("#photo", 1, {x: -0, ease : Power1.easeInOut});
 
 }
+
+// Toggle Icone hamburger
+$(document).ready(function(){
+  $('.barres').click(function(){
+      $('.barres').toggleClass('active');
+  })
+})
+
+
+// Greensock Animations
+
+var timeline = new TimelineMax();
+
+timeline.to(".menu", 1.5, {left: '0%',ease: Expo.easeInOut, delay: -1.5});
+timeline.staggerFrom(".menu ul li", 0.4, {x: -100, opacity: 0}, 0.1);
+
+timeline.reverse();
+
+$(document).on('click', '.barres', function(){
+  timeline.play();
+});
+$(document).on('click', 'a', function(){
+  timeline.reverse();
+  $('.barres').toggleClass('active');
+})

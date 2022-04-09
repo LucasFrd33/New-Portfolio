@@ -26,14 +26,86 @@ body{
   z-index: 100;
   width: 100%;
   height: 100%;
-  background: #e0b289;
+  background: none;
   pointer-events: none;
 }
 
-nav{
-  height: 100px;
-  width: 100%;
+.barres {
+  position: fixed;
   top: 0;
+  width: 100%;
+  height: 80px;
+  cursor: pointer;
+}
+.hamburger {
+  width: 30px;
+  height: 2px;
+  background: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s;
+}
+
+.hamburger::before,
+.hamburger::after
+{
+  content: '';
+  position: absolute;
+  width:30px;
+  height: 2px;
+  background: #fff;
+  transition: 0.5s;
+}
+
+.hamburger::before {
+  top: -5px;
+}
+
+.hamburger::after {
+  top: 5px;
+}
+.barres.active .hamburger {
+    background: #000;
+}
+
+.barres.active .hamburger::before {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.barres.active .hamburger::after {
+    top: 0;
+    transform: rotate(135deg);
+}
+.menu {
+  position: absolute;
+  background: #dfdfdf;
+  height: 100vh;
+  width: 100%;
+  left: -120%;
+  z-index: 1000;
+}
+
+ul {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+}
+ul li {
+  padding-top: 30px;
+}
+a {
+  text-decoration: none;
+  color: rgb(31, 30, 30);
+  font-size: 60px;
+  font-family: Orbitron;
+}
+
+nav{
   display: flex;
   position: fixed;
   justify-content: center;
@@ -44,7 +116,6 @@ nav a{
   text-decoration: none;
   color: white;
   mix-blend-mode: difference;
-
 }
 
 .noise::before{
@@ -144,7 +215,6 @@ nav a{
 
 @media (max-width : 800px) {
   .container{
-    margin-top: 45px;
     grid-template-columns: repeat(1fr);
     grid-template-rows: 1fr 2fr 2fr 1fr;
     margin-left: 30px;
