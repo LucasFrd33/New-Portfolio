@@ -25,6 +25,7 @@ body{
 nav{
   height: 100px;
   width: 100%;
+  top: 0;
   display: flex;
   position: fixed;
   justify-content: center;
