@@ -15,11 +15,10 @@ function loader(){
     })
     .to('.f2', {y: '-100%'})
 
-    .to('.load-container', {opacity: 0, duration: 0.8, delay: 0.7})
+    .to('.load-container', {y: "-100%", ease : Power1.easeInOut})
     .add(() => {
         document.querySelector('.load-container').style.display = "none";
     })
-
     .to("#textPres", 1, {x: +0, ease : Power1.easeInOut})
     .to("#photo", 1, {x: -0, ease : Power1.easeInOut});
 
