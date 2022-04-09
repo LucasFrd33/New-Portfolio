@@ -163,6 +163,7 @@ nav a{
     grid-row: 4;
     grid-column: 1;
     justify-content: end;
+    right: 0;
   }
   .scroll img{
     padding-top: 200px;
