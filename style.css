@@ -176,4 +176,8 @@ nav a{
     justify-content: end;
     align-items: center;
   }
+  .load-container{
+    height: 100%;
+    overflow-y: hidden;
+  }
 }
