@@ -9,6 +9,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"></script>
   <script src="https://scrollmagic.io/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+  <script src="anime.min.js"></script>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +18,7 @@
 <body>
 <header>
   <nav>
-    <a href="">&#9868;</a>
+    <a href="" class="photzdo">&#9868;</a>
   </nav>
 </header>
 <div class="container">
@@ -36,5 +37,6 @@
 <script>
   var tween = TweenMax.from("#textPres", 1, {x: -700, ease : Power1.easeInOut});
   var tween = TweenMax.from("#photo", 1, {x: +300, ease : Power1.easeInOut});
+
 </script>
 </html>
