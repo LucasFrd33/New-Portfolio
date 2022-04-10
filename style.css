@@ -91,7 +91,7 @@ body{
   width: 100%;
   left: -120%;
   z-index: 1000;
-
+  overflow-x:hidden;
 }
 .menu img{
   width: 30%;
@@ -144,13 +144,16 @@ nav a{
 .container{
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 1fr 2fr 2fr 1fr;
+  grid-template-rows: 1fr 150px 1fr;
   grid-gap: 0 20px;
-  height: 100vh;
+}
+header{
+  grid-row: 1;
 }
 
 .main{
   grid-column: 2 / 6;
+  grid-row: 1;
   position: relative;
   margin-top: 150px;
 }
@@ -163,7 +166,7 @@ nav a{
   margin-right: 0px;
   mix-blend-mode: difference;
   transform: translateX(-1500px);
-
+  overflow-x:hidden;
 }
 .imgProfil{
   grid-column: 3;
@@ -174,7 +177,7 @@ nav a{
   z-index: -1;
   right: 0;
   top: 0;
-
+  overflow-x:hidden;
   transform: translateX(+700px);
 }
 .main h2{
@@ -187,10 +190,10 @@ nav a{
 }
 .scroll{
   grid-column: 6;
-  grid-row: 4;
+  grid-row: 2;
   justify-content: center;
+  align-items: center;
   display: flex;
-  margin-top: 60px;
 
 }
 .scroll p{
@@ -209,7 +212,7 @@ nav a{
 
 .projet{
   height: 100%;
-  grid-row: 5;
+  grid-row: 3;
 }
 
 
@@ -229,15 +232,15 @@ nav a{
 @media (max-width : 800px) {
   .container{
     grid-template-columns: repeat(1fr);
-    grid-template-rows: 1fr 2fr 2fr 1fr;
+    grid-template-rows: 1fr 50px 1fr;
     margin-left: 30px;
     margin-right: 30px;
     grid-gap: 0px 0px;
   }
   .main{
-    grid-row: 2;
+    grid-row: 1;
     grid-column: 1;
-    margin-top: 0px;
+    margin-top: 150px;
   }
   .main h1{
     margin-right: 0px;
@@ -254,13 +257,17 @@ nav a{
     transform: translateX(0px);
   }
   .scroll{
-    grid-row: 3;
+    grid-row: 2;
     grid-column: 1;
     justify-content: end;
-    align-items: center;
+    align-items: flex-start;
   }
   .load-container{
     height: 150%;
     overflow-y: hidden;
+  }
+  .projet{
+    height: 100%;
+    grid-row: 3;
   }
 }
