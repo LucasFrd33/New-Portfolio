@@ -52,6 +52,7 @@ body{
   left: 50%;
   transform: translate(-50%, -50%);
   transition: 0.5s;
+  mix-blend-mode: difference;
 }
 
 .hamburger::before,
@@ -63,6 +64,7 @@ body{
   height: 2px;
   background: #fff;
   transition: 0.5s;
+  mix-blend-mode: difference;
 }
 
 .hamburger::before {
@@ -73,7 +75,8 @@ body{
   top: 5px;
 }
 .barres.active .hamburger {
-    background: #000;
+    background: rgb(0, 0, 0);
+    mix-blend-mode: difference;
 }
 
 .barres.active .hamburger::before {
@@ -221,30 +224,38 @@ header{
   justify-content: center;
   align-items: center;
   margin-bottom: 100px;
+  mix-blend-mode: difference;
 }
 .listProjet{
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-right: 80px;
 }
 .listProjet p{
+  width: 50px;
   font-size: 120px;
   font-family: 'bigillaregular';
+  mix-blend-mode: difference;
+  padding-right: 30px;
 }
 .listProjet img{
   width: 70%;
   object-fit: cover;
 }
 .lineContainer{
+  width: 100%;
   display: flex;
   justify-content: center;
-
+  align-items: center;
 }
 .line{
-  height: 1px;
-  width: 40%;
+  height: 2px;
+  width: 600px;
   background-color: white;
+  mix-blend-mode: difference;
+  margin: 15px;
 }
 
 
