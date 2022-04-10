@@ -6,7 +6,8 @@
 
 @font-face {
   font-family: 'bigillaregular';
-  src: url('font/Bigilla.woff2') format('woff2');
+  src: url('bigilla-webfont.woff2') format('woff2'),
+       url('bigilla-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -16,6 +17,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 
 body{
   background-color: rgb(0, 0, 0);
@@ -115,7 +117,6 @@ a {
   text-decoration: none;
   color: rgb(31, 30, 30);
   font-size: 24px;
-  font-family:'foundersgotesklight' ;
 }
 
 nav{
@@ -183,7 +184,7 @@ header{
 }
 .main h2{
   padding-top: 20px;
-  font-family: 'foundersgotesklight';
+  font-family: 'Poiret One', cursive;
   font-size: 24px;
   display: flex;
   justify-content: center;
@@ -208,10 +209,17 @@ header{
 .scroll span{
   font-size: 19px;
 }
-
 .projet{
   height: 100%;
   grid-row: 3;
+  grid-column: 1 / 7;
+}
+.projet h3{
+  font-family: 'Poiret One', cursive;
+  font-size: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
