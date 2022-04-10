@@ -220,7 +220,7 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 .listProjet{
   display: flex;
@@ -235,6 +235,16 @@ header{
 .listProjet img{
   width: 70%;
   object-fit: cover;
+}
+.lineContainer{
+  display: flex;
+  justify-content: center;
+
+}
+.line{
+  height: 1px;
+  width: 40%;
+  background-color: white;
 }
 
 
@@ -293,6 +303,9 @@ header{
     margin-top: 50px;
     height: 140px;
     grid-row: 2;
+  }
+  .projet h3{
+    font-size: 45px;
   }
   .listProjet p{
     font-size: 64px;
