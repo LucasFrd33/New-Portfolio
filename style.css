@@ -261,7 +261,7 @@ header{
     grid-column: 1;
     justify-content: end;
     align-items: flex-end;
-    padding-bottom: 160px;
+    margin-bottom: 10%;
   }
   .load-container{
     height: 150%;
