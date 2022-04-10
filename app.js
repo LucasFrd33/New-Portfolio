@@ -34,3 +34,8 @@ $(document).on('click', 'a', function(){
   timeline.reverse();
   $('.barres').toggleClass('active');
 })
+
+
+function scrollWin() {
+  window.scrollTo(0, 100);
+}

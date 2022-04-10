@@ -203,9 +203,7 @@ header{
   text-decoration: none;
   color: white;
   mix-blend-mode: difference;
-}
-.scroll a{
-  text-decoration:none;
+  cursor: pointer;
 }
 .scroll span{
   font-size: 19px;
