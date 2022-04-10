@@ -1,62 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lucas Froidefond Portfolio</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"></script>
-  <script src="https://scrollmagic.io/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
-</head>
-<div class="container" id="main">
-  <header>
-    <nav class="barres">
-      <div class="hamburger"></div>
-    </nav>
-    <div class="menu">
-      <ul>
-           <li><a href="#"><img src="img/cross.svg" alt=""></a></li>
-           <li><a href="#main">Accueil</a></li>
-           <li><a href="#projet">Mes Projets</a></li>
-           <li><a href="#">Contact</a></li>
-      </ul>
-  </div>
-  </header>
-  <div class="main" >
-    <h1 id="textPres">Lucas<br>Froidefond</h1>
-    <img src="img/Froidefond_Lucas_Photo_Portrait.jpg" alt="photo de profil" class="photoDeProfil" id="photo">
-    <h2>WEB DESIGNER / INTEGRATEUR</h2>
-  </div>
-  <div class="scroll">
-    <div onclick="scrollWin()"><p><span>&darr;</span>SCROLL</p></div>
-  </div>
-  <div class="projet" id="projet">
-      <h3>PROJETS</h3>
-      <div class="lineContainer"><div class="line"></div></div>
-      <div class="listProjet">
-        <p>1</p>
-        <img src="img/presmus.png" alt="Musée de l'imprimerie de Nantes">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lucas Froidefond Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://scrollmagic.io/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <div class="container" id="main">
+    <header>
+      <nav class="barres">
+        <div class="hamburger"></div>
+      </nav>
+      <div class="menu">
+        <ul>
+          <li>
+            <a href="#"><img src="img/cross.svg" alt="" /></a>
+          </li>
+          <li><a href="#main">Accueil</a></li>
+          <li><a href="#projet">Mes Projets</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
       </div>
-      <div class="lineContainer"><div class="line"></div></div>
-      <div class="listProjet">
-        <p>2</p>
-        <img src="img/presblog.png" alt="">
+    </header>
+    <div class="main">
+      <h1 id="textPres">Lucas<br />Froidefond</h1>
+      <img
+        src="img/Froidefond_Lucas_Photo_Portrait.jpg"
+        alt="photo de profil"
+        class="photoDeProfil"
+        id="photo"
+      />
+      <h2>WEB DESIGNER / INTEGRATEUR</h2>
+    </div>
+    <div class="scroll">
+      <div onclick="scrollWin()">
+        <p><span>&darr;</span>SCROLL</p>
       </div>
-      <div class="lineContainer"><div class="line"></div></div>
-      <div class="listProjet"></div>
-      <div class="listProjet"></div>
+    </div>
+    <div class="projet" id="projet">
+        <h3>PROJETS</h3>
+        <div class="lineContainer"><div class="line"></div></div>
+        <div class="listProjet">
+          <p>1</p>
+          <img src="img/presmus.png" alt="Musée de l'imprimerie de Nantes" />
+        </div>
+        <div class="lineContainer"><div class="line"></div></div>
+        <div class="listProjet">
+          <p>2</p>
+          <img src="img/presblog.png" alt="" />
+        </div>
+        <div class="lineContainer"><div class="line"></div></div>
+        <div class="listProjet">
+          <p>3</p>
+          <img src="img/presReve.png" alt="" />
+        </div>
+        <div class="lineContainer"><div class="line"></div></div>
+        <div class="listProjet">
+          <p>4</p>
+          <img src="img/presPhoto.png" alt="" />
+        </div>
+        <div class="lineContainer"><div class="line"></div></div>
+    </div>
   </div>
 
-</div>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
-<script src="app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
+  <script src="app.js"></script>
 </html>
