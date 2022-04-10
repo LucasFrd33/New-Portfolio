@@ -261,12 +261,14 @@ header{
     grid-column: 1;
     justify-content: end;
     align-items: flex-end;
+    padding-bottom: 200px;
   }
   .load-container{
     height: 150%;
     overflow-y: hidden;
   }
   .projet{
+    margin-top: 50px;
     height: 140px;
     grid-row: 2;
   }
