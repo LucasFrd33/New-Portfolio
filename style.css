@@ -6,8 +6,7 @@
 
 @font-face {
   font-family: 'bigillaregular';
-  src: url('bigilla-webfont.woff2') format('woff2'),
-       url('bigilla-webfont.woff') format('woff');
+  src: url('font/Bigilla.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -146,8 +145,8 @@ nav a{
 .container{
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 1fr 150px 1fr;
-  grid-gap: 0 20px;
+  grid-template-rows: 90vh 10vh 1fr;
+  grid-gap: 0px 20px;
 }
 header{
   grid-row: 1;
@@ -210,6 +209,7 @@ header{
   font-size: 19px;
 }
 .projet{
+  margin-top: 200px;
   height: 100%;
   grid-row: 3;
   grid-column: 1 / 7;
@@ -220,6 +220,21 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
+}
+.listProjet{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.listProjet p{
+  font-size: 120px;
+  font-family: 'bigillaregular';
+}
+.listProjet img{
+  width: 70%;
+  object-fit: cover;
 }
 
 
@@ -278,5 +293,9 @@ header{
     margin-top: 50px;
     height: 140px;
     grid-row: 2;
+  }
+  .listProjet p{
+    font-size: 64px;
+    font-family: 'bigillaregular';
   }
 }

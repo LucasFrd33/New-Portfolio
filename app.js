@@ -37,5 +37,5 @@ $(document).on('click', 'a', function(){
 
 
 function scrollWin() {
-  window.scrollTo(0, 1000);
+  window.scrollTo(0, 900);
 }
