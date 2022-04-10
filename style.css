@@ -261,7 +261,7 @@ header{
     grid-column: 1;
     justify-content: end;
     align-items: flex-end;
-    margin-bottom: 25%;
+    margin-bottom: 35%;
   }
   .load-container{
     height: 150%;
