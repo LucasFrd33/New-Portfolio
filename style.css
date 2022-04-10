@@ -91,7 +91,7 @@ body{
   width: 100%;
   left: -120%;
   z-index: 1000;
-  overflow-x:hidden;
+
 }
 .menu img{
   width: 30%;
@@ -163,7 +163,7 @@ nav a{
   margin-right: 0px;
   mix-blend-mode: difference;
   transform: translateX(-1500px);
-  overflow-x:hidden;
+
 }
 .imgProfil{
   grid-column: 3;
@@ -174,7 +174,7 @@ nav a{
   z-index: -1;
   right: 0;
   top: 0;
-  overflow-x:hidden;
+
   transform: translateX(+700px);
 }
 .main h2{
