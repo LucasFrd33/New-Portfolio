@@ -22,6 +22,7 @@ body{
   background-color: rgb(0, 0, 0);
   color: white;
   overflow-x: hidden;
+  cursor: none;
 }
 .load-container {
   position: absolute;
@@ -91,7 +92,7 @@ body{
 }
 .menu {
   position: fixed;
-  background: #dfdfdf;
+  background: #ffffff;
   height: 100vh;
   width: 100%;
   left: -120%;
@@ -105,6 +106,9 @@ body{
   align-items: center;
   padding-left: 20px;
 }
+.cross{
+  cursor: pointer;
+}
 ul {
   position: absolute;
   top: 40%;
@@ -114,11 +118,13 @@ ul {
 }
 ul li {
   padding-top: 30px;
+  font-family: 'Poiret One', cursive;
 }
 a {
   text-decoration: none;
   color: rgb(31, 30, 30);
   font-size: 24px;
+  font-family: 'Poiret One', cursive;
 }
 
 nav{
@@ -170,7 +176,7 @@ header{
   margin-right: 0px;
   mix-blend-mode: difference;
   transform: translateX(-1500px);
-  overflow-x:hidden;
+
 }
 .imgProfil{
   grid-column: 3;
@@ -212,7 +218,7 @@ header{
   font-size: 19px;
 }
 .projet{
-  margin-top: 200px;
+  margin-top: 100px;
   height: 100%;
   grid-row: 3;
   grid-column: 1 / 7;
@@ -223,7 +229,7 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
   mix-blend-mode: difference;
 }
 .listProjet{
@@ -233,31 +239,103 @@ header{
   align-items: center;
   margin-right: 80px;
 }
-.listProjet p{
+.textProjetNumber{
   width: 50px;
   font-size: 120px;
   font-family: 'bigillaregular';
   mix-blend-mode: difference;
   padding-right: 30px;
 }
+.textProjet {
+  font-size: 64px;
+  font-family: 'Poiret One', cursive;
+}
 .listProjet img{
   width: 70%;
   object-fit: cover;
+  z-index: 600;
 }
 .lineContainer{
+  margin-top: 50px;
+  margin-bottom: 50px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .line{
-  height: 2px;
+  height: 1px;
   width: 600px;
   background-color: white;
   mix-blend-mode: difference;
   margin: 15px;
 }
+#image1{
+  width: 40px;
+    height: 40px;
+    border: 1px dashed white;
+    border-radius: 50%;
+    position: absolute;
+    animation: Anim1 1s infinite alternate;
+  pointer-events: none;
+}
 
+.cursor{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  margin-left: 0px;
+  margin-top: -0px;
+  border-radius: 50%;
+  background-color: #fff;
+  mix-blend-mode: difference;
+  transition: transform .3s ease;
+  transform-origin: center center;
+  pointer-events: none;
+  z-index: 1500;
+  transform: scale(0),rotate(0deg);
+}
+
+.grow, .grow-small{
+  transform: scale(10);
+  border: none;
+}
+.grow-cursor1{
+  transform: scale(30);
+  background-size: cover;
+  background-repeat: no-repeat;
+  mix-blend-mode: none;
+  background-image: url(img/presmus.png);
+  z-index: 1500;
+}
+.grow-cursor2{
+  transform: scale(30);
+  background-size: cover;
+  background-repeat: no-repeat;
+  mix-blend-mode: none;
+  background-image: url(img/presblog.png);
+  z-index: 1500;
+}
+.grow-cursor3{
+  transform: scale(30);
+  background-size: cover;
+  background-repeat: no-repeat;
+  mix-blend-mode: none;
+  background-image: url(img/presmus.png);
+  z-index: 1500;
+}
+.grow-cursor4{
+  transform: scale(30);
+  background-size: cover;
+  background-repeat: no-repeat;
+  mix-blend-mode: none;
+  background-image: url(img/presmus.png);
+  z-index: 1500;
+}
+
+.grow-small{
+  transform: scale(2.5);
+}
 
 @media (max-width : 1400px) {
   .main h1{
@@ -311,15 +389,18 @@ header{
     overflow-y: hidden;
   }
   .projet{
-    margin-top: 50px;
+    margin-top: 0px;
     height: 140px;
     grid-row: 2;
   }
   .projet h3{
     font-size: 45px;
   }
-  .listProjet p{
+  .textProjetNumber{
     font-size: 64px;
     font-family: 'bigillaregular';
+  }
+  .textProjet{
+    font-size: 34px;
   }
 }
