@@ -235,9 +235,8 @@ header{
 .listProjet{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  margin-right: 80px;
 }
 .textProjetNumber{
   width: 50px;
@@ -247,7 +246,7 @@ header{
   padding-right: 30px;
 }
 .textProjet {
-  font-size: 64px;
+  font-size: 24px;
   font-family: 'Poiret One', cursive;
 }
 .listProjet img{
@@ -351,6 +350,12 @@ header{
 
 
 @media (max-width : 800px) {
+  body{
+    cursor: pointer;
+  }
+  .cursor{
+    display: none;
+  }
   .container{
     grid-template-columns: 1fr;
     grid-template-rows: 100vh 1fr 1fr;
