@@ -255,8 +255,8 @@ header{
   z-index: 600;
 }
 .lineContainer{
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -336,6 +336,10 @@ header{
   transform: scale(2.5);
 }
 
+.pointerAction{
+  cursor: pointer;
+}
+
 @media (max-width : 1400px) {
   .main h1{
     margin-right: 30px;
@@ -406,6 +410,6 @@ header{
     font-family: 'bigillaregular';
   }
   .textProjet{
-    font-size: 34px;
+    font-size: 16px;
   }
 }
