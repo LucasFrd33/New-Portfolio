@@ -263,6 +263,7 @@ header{
   object-fit: cover;
   z-index: 600;
   position: absolute;
+  margin-right: 100px;
 }
 .lineContainer{
   margin-top: 20px;
@@ -421,5 +422,6 @@ header{
   }
   .textProjet{
     font-size: 16px;
+    display: none;
   }
 }
