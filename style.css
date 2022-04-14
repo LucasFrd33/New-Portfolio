@@ -248,11 +248,13 @@ header{
 .textProjet {
   font-size: 24px;
   font-family: 'Poiret One', cursive;
+  margin-left: 470px;
 }
 .listProjet img{
-  width: 70%;
+  width: 20%;
   object-fit: cover;
   z-index: 600;
+  position: absolute;
 }
 .lineContainer{
   margin-top: 20px;
@@ -411,5 +413,6 @@ header{
   }
   .textProjet{
     font-size: 16px;
+    margin-left: 280px;
   }
 }
