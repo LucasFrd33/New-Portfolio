@@ -235,7 +235,16 @@ header{
 .listProjet{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.logoProj{
+  width: 100%;
+  display: flex;
+  position: absolute;
+  justify-content: center;
   align-items: center;
 }
 .textProjetNumber{
@@ -248,7 +257,6 @@ header{
 .textProjet {
   font-size: 24px;
   font-family: 'Poiret One', cursive;
-  margin-left: 470px;
 }
 .listProjet img{
   width: 20%;
@@ -413,6 +421,5 @@ header{
   }
   .textProjet{
     font-size: 16px;
-    margin-left: 280px;
   }
 }
