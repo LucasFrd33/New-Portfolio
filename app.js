@@ -103,6 +103,18 @@ cursorScale.forEach(link => {
           cursor.classList.add('grow-cursor2');
       }
   });
+///
+link.addEventListener('mouseleave', () => {
+  cursor.classList.remove('grow');
+  cursor.classList.remove('grow-cursor3');
+});
+link.addEventListener('mousemove', () => {
+  cursor.classList.add('grow');
+  if(link.classList.contains('cursor3')){
+      cursor.classList.remove('grow');
+      cursor.classList.add('grow-cursor3');
+  }
+});
 
 
 });
