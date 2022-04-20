@@ -23,6 +23,7 @@ body{
   color: white;
   overflow-x: hidden;
   cursor: none;
+  min-height: 100vh;
 }
 .load-container {
   position: absolute;
@@ -463,7 +464,7 @@ header{
     align-items: flex-end;
     display: flex;
     padding-right: 95px;
-    padding-bottom: 60px;
+    padding-bottom: 100px;
 
   }
   .scrollProjet p{
