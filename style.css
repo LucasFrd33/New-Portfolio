@@ -155,7 +155,7 @@ nav a{
 .container{
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 90vh 10vh 1fr;
+  grid-template-rows: 90vh 10vh 1fr 1fr;
   grid-gap: 0px 20px;
 }
 header{
@@ -250,7 +250,7 @@ header{
 }
 .projet h3{
   font-family: 'Poiret One', cursive;
-  font-size: 64px;
+  font-size: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -379,6 +379,23 @@ header{
   cursor: pointer;
 }
 
+.contact{
+  margin-top: 100px;
+  justify-content: center;
+  height: 100%;
+  grid-row: 4;
+  grid-column: 1 / 7;
+}
+.contact h3{
+  font-family: 'Poiret One', cursive;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+  mix-blend-mode: difference;
+}
+
 @media (max-width : 1400px) {
   .main h1{
     margin-right: 30px;
@@ -401,7 +418,7 @@ header{
   }
   .container{
     grid-template-columns: 1fr;
-    grid-template-rows: 100vh 1fr 1fr;
+    grid-template-rows: 100vh 1fr 1fr 1fr;
     margin-left: 30px;
     margin-right: 30px;
     grid-gap: 0px 0px;
@@ -444,7 +461,6 @@ header{
   }
   .projet{
     margin-top: 0px;
-    height: 140px;
     grid-row: 2;
   }
   .projet h3{
@@ -479,5 +495,13 @@ header{
   }
   .scrollProjet span{
     font-size: 19px;
+  }
+  .contact{
+    margin-top: 0px;
+    height: 140px;
+    grid-row: 3;
+  }
+  .contact h3{
+    font-size: 45px;
   }
 }
