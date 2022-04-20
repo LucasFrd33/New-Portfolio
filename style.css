@@ -155,7 +155,7 @@ nav a{
 .container{
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 90vh 10vh 1fr 1fr;
+  grid-template-rows: 90vh 10vh 1fr 1fr 40vh;
   grid-gap: 0px 20px;
 }
 header{
@@ -208,7 +208,7 @@ header{
 
 }
 .scroll p{
-  font-size: 19px;
+  font-size: 24px;
   font-family: 'foundersgotesklight';
   text-decoration: none;
   color: white;
@@ -216,7 +216,7 @@ header{
   cursor: pointer;
 }
 .scroll span{
-  font-size: 19px;
+  font-size: 24px;
 }
 .scrollProjet{
   grid-column: 6;
@@ -229,7 +229,7 @@ header{
 
 }
 .scrollProjet p{
-  font-size: 19px;
+  font-size: 24px;
   font-family: 'foundersgotesklight';
   text-decoration: none;
   color: white;
@@ -239,7 +239,7 @@ header{
   background-color: rgb(0, 0, 0);
 }
 .scrollProjet span{
-  font-size: 19px;
+  font-size: 24px;
 }
 .projet{
   margin-top: 100px;
@@ -254,7 +254,7 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 60px;
+  margin-bottom: 150px;
   mix-blend-mode: difference;
 }
 .listProjet{
@@ -387,6 +387,7 @@ header{
   grid-column: 1 / 7;
 }
 .contact h3{
+  margin-top: 60px;
   font-family: 'Poiret One', cursive;
   font-size: 50px;
   display: flex;
@@ -394,6 +395,20 @@ header{
   align-items: center;
   margin-bottom: 60px;
   mix-blend-mode: difference;
+}
+
+footer{
+  border-top: 1px solid;
+  grid-column: 5;
+  grid-column: 1 / 7;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+footer p{
+  font-family: 'Poiret One', cursive;
+  font-size: 24px;
 }
 
 @media (max-width : 1400px) {
@@ -465,6 +480,7 @@ header{
   }
   .projet h3{
     font-size: 45px;
+
   }
   .textProjetNumber{
     font-size: 64px;
