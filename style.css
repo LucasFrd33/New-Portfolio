@@ -489,7 +489,7 @@ header{
     cursor: pointer;
     position: fixed;
     background-color: rgb(0, 0, 0);
-    bottom: 0px;
+    bottom: 10px;
   }
   .scrollProjet span{
     font-size: 19px;
