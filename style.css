@@ -401,14 +401,36 @@ footer{
   border-top: 1px solid;
   grid-column: 5;
   grid-column: 1 / 7;
-  align-items: center;
-  justify-content: center;
   display: flex;
   flex-direction: column;
+}
+footer div{
+  height: 33.33%;
 }
 footer p{
   font-family: 'Poiret One', cursive;
   font-size: 24px;
+}
+.copyrightNav{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 20px;
+}
+.copyright{
+  font-size: 16px;
+  color: rgb(78, 78, 78);
+}
+.contactFooter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: underline;
+}
+.navFooter{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
 }
 
 @media (max-width : 1400px) {
