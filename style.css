@@ -217,6 +217,29 @@ header{
 .scroll span{
   font-size: 19px;
 }
+.scrollProjet{
+  grid-column: 6;
+  grid-row: 2;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding-right: 75px;
+  padding-bottom: 10px;
+
+}
+.scrollProjet p{
+  font-size: 19px;
+  font-family: 'foundersgotesklight';
+  text-decoration: none;
+  color: white;
+  mix-blend-mode: difference;
+  cursor: pointer;
+  position: fixed;
+  background-color: rgb(0, 0, 0);
+}
+.scrollProjet span{
+  font-size: 19px;
+}
 .projet{
   margin-top: 100px;
   justify-content: center;
@@ -249,6 +272,7 @@ header{
   align-items: center;
 }
 .textProjetNumber{
+  color: white;
   width: 50px;
   font-size: 120px;
   font-family: 'bigillaregular';
@@ -258,6 +282,8 @@ header{
 .textProjet {
   font-size: 24px;
   font-family: 'Poiret One', cursive;
+  color: white;
+
 }
 .listProjet img{
   width: 20%;
@@ -332,7 +358,7 @@ header{
   background-size: cover;
   background-repeat: no-repeat;
   mix-blend-mode: none;
-  background-image:url("img/motion\ design\ v2.mp4") 0 0 no-repeat;
+  background-image:url(img/presEtudi.png);
   z-index: 1500;
 }
 .grow-cursor4{
