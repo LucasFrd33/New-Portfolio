@@ -498,6 +498,7 @@ footer p{
 }
 
 .imgPres3v2{
+  display: flex;
   margin-top: 20px !important;
 }
 .etudiImg2{
