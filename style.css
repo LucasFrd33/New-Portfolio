@@ -463,7 +463,7 @@ footer p{
   margin-top: 70px;
 }
 .presentation p{
-  margin-top: 100px;
+  margin-top: 50px;
   font-family: 'Poiret One', cursive;
 }
 .imgPres{
@@ -477,6 +477,32 @@ footer p{
 .imgPres2 img{
   width: 100%;
   margin-top: 100px;
+}
+.presentationLiens{
+  display: grid;
+  grid-column: 2;
+}
+.presentationLiens a{
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+.imgPres3{
+  display: flex;
+  justify-content: center;
+}
+.imgPres2 iframe{
+  margin-top: 50px;
+}
+
+.imgPres3v2{
+  margin-top: 20px !important;
+}
+.etudiImg2{
+  margin-right: 20px;
+  width: 100%;
 }
 @media (max-width : 1400px) {
   .main h1{
@@ -605,7 +631,10 @@ footer p{
     display: flex;
     justify-content: center;
   }
-footer{
-  margin-top: 30px;
-}
+  .imgPres3{
+    flex-wrap: wrap;
+  }
+  footer{
+    margin-top: 30px;
+  }
 }
