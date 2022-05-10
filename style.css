@@ -220,13 +220,12 @@ header{
 }
 .scrollProjet{
   grid-column: 3;
-  grid-row: 1;
+  grid-row: 3;
   justify-content: center;
   align-items: center;
   display: flex;
   padding-right: 75px;
   padding-bottom: 10px;
-
 }
 .scrollProjet p{
   font-size: 24px;
@@ -237,6 +236,8 @@ header{
   cursor: pointer;
   position: fixed;
   background-color: rgb(0, 0, 0);
+  bottom: 0;
+  padding-bottom: 20px;
 }
 .scrollProjet span{
   font-size: 24px;
@@ -445,8 +446,8 @@ footer p{
 
 .containerPres{
   display: grid;
-  grid-template-columns: 1fr 60vw 1fr;
-  grid-template-rows: 1fr 40vh;
+  grid-template-columns: 1fr 60vw 1fr ;
+  grid-template-rows: 40vh 1fr 40vh;
   grid-gap: 0px 20px;
 }
 
@@ -481,6 +482,7 @@ footer p{
 .presentationLiens{
   display: grid;
   grid-column: 2;
+  grid-row: 3;
 }
 .presentationLiens a{
   color: white;
@@ -492,6 +494,7 @@ footer p{
 .imgPres3{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .imgPres2 iframe{
   margin-top: 50px;
@@ -505,6 +508,28 @@ footer p{
   margin-right: 20px;
   width: 100%;
 }
+
+.iframe{
+  width: 50%;
+}
+
+.footerEtudi{
+  grid-row: 4;
+  grid-column: 1 / 4;
+}
+.imagePres1{
+display: flex;
+justify-content: center;
+grid-row: 2;
+grid-column: 2;
+}
+.imagePres1 img{
+  width: 50%;
+}
+.footerMus{
+  grid-row: 3;
+}
+
 @media (max-width : 1400px) {
   .main h1{
     margin-right: 30px;
@@ -598,6 +623,9 @@ footer p{
     position: fixed;
     background-color: rgb(0, 0, 0);
     bottom: 10px;
+    display: flex;
+    right: 0;
+    padding-right: 10px;
   }
   .scrollProjet span{
     font-size: 19px;
@@ -613,8 +641,6 @@ footer p{
   .containerPres{
     grid-template-columns: 1fr;
     grid-template-rows: 50vh 1fr 100vh;
-    margin-left: 30px;
-    margin-right: 30px;
     grid-gap: 0px 0px;
   }
 
@@ -637,5 +663,10 @@ footer p{
   }
   footer{
     margin-top: 30px;
+  }
+  .presentationLiens{
+    display: grid;
+    grid-column: 1;
+    grid-row: 3;
   }
 }
