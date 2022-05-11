@@ -485,10 +485,15 @@ footer p{
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 .ImgPres2 img{
-  width: 70%;
+  width: 50%;
   margin-top: 50px;
+}
+
+.widthMus img{
+  width: 80% !important;
 }
 
 .paraPres{
@@ -507,6 +512,18 @@ footer p{
   margin-bottom: 50px;
   color: white;
 }
+
+.videoEtudi{
+  padding-top: 50px;
+  grid-row: 3;
+  grid-column: 2;
+
+}
+
+.videoEtudi iframe{
+  width: 100%;
+}
+
 
 @media (max-width : 1400px) {
   .main h1{
@@ -618,7 +635,7 @@ footer p{
   }
   .containerPres{
     grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 10vh 1fr 100vh;
+    grid-template-rows: 10vh 1fr;
     grid-gap: 0px 0px;
   }
 
@@ -652,5 +669,8 @@ footer p{
   }
   .ImgPres2 img{
     width: 100%;
+  }
+  .ImgPres2{
+    flex-wrap: wrap;
   }
 }
