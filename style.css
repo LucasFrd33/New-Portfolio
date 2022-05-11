@@ -447,87 +447,38 @@ footer p{
 .containerPres{
   display: grid;
   grid-template-columns: 1fr 60vw 1fr ;
-  grid-template-rows: 40vh 1fr 40vh;
+  grid-template-rows: 10vh 10vh 1fr 1fr;
   grid-gap: 0px 20px;
 }
 
-.presentation{
-  margin-top: 50px;
-  width: 100%;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  grid-column: 2;
-}
-.presentation img{
-  width: 50%;
-  margin-top: 70px;
-}
-.presentation p{
-  margin-top: 50px;
-  font-family: 'Poiret One', cursive;
-}
-.imgPres{
-  display: flex;
-  justify-content: center;
-}
-.imgPres2{
-  display: flex;
-  justify-content: center;
-}
-.imgPres2 img{
-  width: 100%;
-  margin-top: 100px;
-}
-.presentationLiens{
-  display: grid;
-  grid-column: 2;
-  grid-row: 3;
-}
-.presentationLiens a{
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-}
-.imgPres3{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.imgPres2 iframe{
-  margin-top: 50px;
-}
-
-.imgPres3v2{
-  display: flex;
-  margin-top: 20px !important;
-}
-.etudiImg2{
-  margin-right: 20px;
-  width: 100%;
-}
-
-.iframe{
-  width: 50%;
-}
-
 .footerEtudi{
+  grid-row: 3;
+  grid-column: 1 / 4;
+}
+
+.footerMus{
   grid-row: 4;
   grid-column: 1 / 4;
 }
-.imagePres1{
-display: flex;
-justify-content: center;
-grid-row: 2;
-grid-column: 2;
+.headerMus{
+  grid-row: 1;
 }
-.imagePres1 img{
-  width: 50%;
+
+.ImgPres{
+  grid-row: 2;
+  grid-column: 2;
+  display: flex;
+  justify-content: center;
 }
-.footerMus{
+
+.paraPres{
   grid-row: 3;
+  grid-column: 2;
+  display: flex;
+}
+
+.paraPres p {
+  margin-top: 30px;
 }
 
 @media (max-width : 1400px) {
@@ -639,8 +590,8 @@ grid-column: 2;
     font-size: 45px;
   }
   .containerPres{
-    grid-template-columns: 1fr;
-    grid-template-rows: 50vh 1fr 100vh;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 10vh 1fr 100vh;
     grid-gap: 0px 0px;
   }
 
@@ -668,5 +619,8 @@ grid-column: 2;
     display: grid;
     grid-column: 1;
     grid-row: 3;
+  }
+  .ImgPres img{
+    width: 70%;
   }
 }
